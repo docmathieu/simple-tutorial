@@ -1,0 +1,4 @@
+RewriteEngine On
+DirectoryIndex null
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ %{ENV:SUB_FOLDER}/src/php/index.php?param=$1 [L]

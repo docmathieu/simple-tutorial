@@ -1,0 +1,44 @@
+<ti>Add Comments</ti>
+<h2>Add Comments</h2>
+<p>
+    Simple Tutorial use <b>Facebook Comments Plugin</b>, so first we have to get our Facebook App ID.<br />
+    To do this:
+    <ol>
+        <li>click on the following url: <a target="_blank" href="https://developers.facebook.com/apps/">https://developers.facebook.com/apps/</a></li>
+        <li>click on the <b>Add a New App</b> button.</li>
+        <li>Enter a name for your application eg "my tutorials" and click <b>Create New Facebook App ID</b> button.</li>
+        <li>Select a category and click <b>Create New Facebook App ID</b> button.</li>
+        <li>In "Setup the Facebook SDK for JavaScript", locate the appId and copy it.</li>
+        <li>In "Tell us about your website", enter the url of your website for example http://tuto.mywebsite.com and click the next button.</li>
+    </ol>
+</p>
+<br />
+<p>
+    You can now edit the file setting.ini
+</p>
+<pre>
+defaultLanguage=en
+facebookComments=true
+facebookID=[paste your appId here]
+</pre>
+<br />
+<div class="warning">
+    <h3><b>WARNING !</b></h3>
+    <p>
+        
+        In the chapter "Create a new tutorial" we said "Note that the 'en' and 'fr' folders might as well be called 'serialkiller'".<br />
+        This statement is true but the language 'serialkiller' will not be recognized by Facebook comments.
+    </p>
+</div>
+<p>
+    <b>simple-tutorial/data/locales.json</b> file used to set the language codes.<br />
+    If you really want a folder named 'serialkiller' with the English language, you can add this to locales.json:
+    {"folder":"serialkiller", "code":"en_US"}<br />
+    Here is the list of language codes available: <a target="_blank" href="https://www.facebook.com/translations/FacebookLocales.xml">https://www.facebook.com/translations/FacebookLocales.xml</a>.<br />
+    The code that interests us is in the representation tag.
+</p>
+<br />
+<p>
+    Reload your page, you should see a comment block at the bottom of the page.
+</p>
+<img src="/image/comments-block.png"/>

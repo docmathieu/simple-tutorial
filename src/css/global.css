@@ -1,0 +1,272 @@
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url("/src/font/OpenSans-Regular.ttf");
+}
+
+html, body, ul, pre{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "OpenSans-Regular", serif;
+    background-color: #385a65;
+    color: white;
+    font-size: medium;
+    word-break: break-word;
+}
+
+ul li{
+    list-style-type: none;
+    cursor: pointer;
+}
+
+ol>li{
+    padding-top: 10px;
+}   
+
+#leftBlock li:hover, #footer span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a, a:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+ti{
+    display: none;
+}
+
+h1, .style-h1{
+    margin: 0;
+    font-size: xx-large;
+    text-shadow: 1px 1px #273f47;
+}
+
+h2, .style-h2{
+    font-size: x-large;
+}
+
+h3, .style-h3{
+    font-size: large;
+    font-weight: normal;
+}
+
+h4, .style-h4{
+    font-size: medium;
+    font-weight: normal;
+}
+
+h5, .style-h5 {
+    color: grey;
+    font-size: small;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+h6{
+    font-size: x-small;
+}
+
+img{
+    max-width: 100%;
+}
+
+pre{
+    background-color: #444444;
+    color: white;
+    font-family: "OpenSans-Regular",serif;
+    font-size: inherit;
+    padding: 10px;
+    display: inline-block;
+    white-space: pre-wrap;
+    /*word-wrap: break-word;*/
+    /*word-break: break-all;*/
+    /*word-break: break-word;*/
+}
+
+.clear{
+    clear: both;
+}
+
+#footer, #error, #tutorialList{
+    padding: 10px;
+}
+
+.tab_1{
+    padding-left: 20px;
+}
+
+.tab_2{
+    padding-left: 40px;
+}
+
+.tab_3{
+    padding-left: 60px;
+}
+
+.info{
+    margin-top: 40px;
+}
+
+td {
+    padding-right: 20px;
+    min-width: 40px;
+}
+
+/* _____________________ Tuto list ______________________ */
+
+#tutorialList a:hover{
+    text-decoration: underline;
+}
+
+
+/* _____________________ SUMMARY ______________________ */
+
+#summary {
+    background-color: #385a65;
+    position: fixed;
+    width: 100%;
+    /*height: 63px;*/
+    border-bottom: 1px solid #273f47;
+}
+
+#summary:hover li{
+    
+}
+
+#summary h1{
+    display: inline;
+    vertical-align: middle;
+}
+
+#summary #openLeftBock{
+    cursor: pointer;
+    display: inline;
+    font-size: 46px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    text-shadow: 1px 1px #273f47;
+}
+
+.summary-list{
+    margin-top: 16px;
+}
+
+.language-list{
+    margin-top: 10px;
+}
+
+.summary-list li, .language-list li{
+    font-size: medium;
+}
+
+.language-list li{
+    padding: 3px 5px;
+    display: inline-block;
+}
+
+.summary-list .selectedTitle, .language-list .selectedLanguage{
+    background-color: white;
+    border-radius: 50px;
+    color: #273f47;
+    padding: 2px 10px;
+}
+
+
+/* _____________________ LEFT BLOCK ______________________ */
+
+#leftBlock{
+    background-color: #385a65;
+    height: calc(100% - 63px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    border-right: 1px solid #273f47;
+    z-index: 10;
+}
+
+#leftBlock #insideLeftBlock{
+    padding: 10px;
+    display: none;
+}
+
+#leftInfo{
+    border-top: 1px solid #273f47;
+    margin-top: 20px;
+    color: #273f47;
+}
+
+
+
+/* _____________________ CONTENT BLOCK ______________________ */
+
+#content{
+    background-color: white;
+    color: black;
+    padding: 100px 20px 50px;
+    font-size: small;
+    overflow-x: hidden;
+}
+
+#content ul li:hover, #content ul li{
+    cursor: inherit;
+    font-weight: normal;
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+#content a {
+    color: #385a65;
+}
+
+
+/* _____________________ FOOTER ______________________ */
+
+#footer{
+    border-top: 1px solid #273f47;
+}
+
+#previousPage{
+    float: left;
+}
+
+#nextPage{
+    float: right;
+}
+
+
+/* _____________________ FACEBOOK ______________________ */
+
+#facebookComments{
+    margin: 4%;
+    position: relative;
+    z-index: -1;
+}
+
+
+/* _____________________ WARNING ______________________ */
+
+.warning {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #FFFF6B;
+    display: inline-block;
+}
+
+.warning p{
+    padding: 0 10px 10px;
+    margin: 0;
+}
+
+.warning h2, .warning h3, .warning h4{
+    margin: 0;
+    padding: 10px;
+    color: red;
+}

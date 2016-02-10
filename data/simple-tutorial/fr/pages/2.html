@@ -1,0 +1,111 @@
+<ti>Créer un nouveau tutoriel</ti>
+<h2>Créer un nouveau tutoriel</h2>
+<ol>
+    <li class="style-h3">
+        <h3>Arborescence</h3>
+    </li>
+    <div>
+        <p>
+            Pour créer votre tutoriel rendez-vous dans le dossier <b>simple-tutorial/data</b>.<br />
+            Copiez collez le dossier "simple-tutorial".<br />
+            Renommez le nouveau dossier en "new-tuto".
+        </p>
+        <p>
+            Arborescence de notre dossier:
+            <table>
+                <tr>
+                    <td><b>en</b></td>
+                    <td>contient les images et les pages pour la langue Anglaise</td>
+                </tr>
+                <tr>
+                    <td><b>fr</b></td>
+                    <td>contient les images et les pages pour la langue Française</td>
+                </tr>
+                <tr>
+                    <td><b>setting.ini</b></td>
+                    <td>contient les configurations du tutoriel, par exemple la langue par défaut</td>
+                </tr>
+                <tr>
+                    <td><b>style.css</b></td>
+                    <td>permet de surcharger le style global</td>
+                </tr>
+            </table>
+
+        </p>
+        <p>
+            Notez que les dossiers 'en' et 'fr' pourraient tout aussi bien s'appeler 'unquoi', dans ce cas vous verriez 'unquoi' dans la liste des langues.
+        </p>
+    </div>
+    <li class="style-h3">
+        <h3>Langue par défaut</h3>
+    </li>
+    <div>
+        <p>
+            Configurons la langue par défaut.<br />
+            Dans le même temps nous retirons les commentaires facebook, nous verrons ces confurations plus tard.<br />
+            Ouvrez le fichier setting.ini et modifiez le pour obtenir ceci:
+        </p>
+<pre>
+defaultLanguage=fr
+facebookComments=false
+facebookID=
+</pre>
+    </div>
+    <br />
+    <li class="style-h3">
+        <h3>Titre du tutoriel</h3>
+    </li>
+    <div>
+        <p>
+            Le titre est fonction de la langue, nous avons donc un fichier setting.ini dans chaque dossier de langue.<br />
+            Ouvrez le fichier <b>simple-tutorial/data/new-tuto/fr/setting.ini</b> et modifiez le title.
+        </p>
+        <pre>title=Nouveau tutoriel</pre>
+    </div>
+    <br />
+    <li class="style-h3">
+        <h3>Tester le site</h3>
+    </li>
+    <div>
+        <p>
+            Dans un nouvel onglet affichez votre page http://tuto.monsite.com<br />
+            Vous pouvez constater un nouveau lien vers votre tutoriel "Nouveau tutoriel".<br />
+            Cliquez sur ce lien, les données actuelles sont celles du tutoriel "Simple Tutoriel", nous allons donc les supprimer.<br />
+            Commencez par supprimer le dossier concernant l'Anglais: <b>simple-tutorial/data/new-tuto/en</b>
+        </p>
+        <p>
+            Supprimez tous les fichiers des dossiers suivants:
+            <ul>
+                <li>simple-tutorial/data/new-tuto/fr/images</li>
+                <li>simple-tutorial/data/new-tuto/fr/pages</li>
+            </ul>
+        </p>
+        <p>
+            Il n'y a plus de données dans votre tutoriel vous aurez donc une erreur si vous rechargez la page.
+        </p>
+    </div>
+    <li class="style-h3">
+        <h3>Contenu récurrent</h3>
+    </li>
+    <div>
+        <p>
+            En naviguant dans les dossiers vous aurez peut-être remarqué des fichiers nommés container.html<br />
+            Ces fichiers permettent d'ajouter du HTML récurrent, qui sera visible sur toutes les pages du tutoriel.<br />
+            Cela peut-être utile pour afficher le nom de l'auteur par exemple.
+        </p>
+        <p>
+            Ouvrez le fichier <b>simple-tutorial/data/new-tuto/fr/container.html</b> et modifiez en le contenu par:
+        </p>
+        
+<pre>[DATA]
+<div class='info'>
+    <h5>Auteur: Prenom Nom</h5>
+    <h5>Date: xx/xx/xxxx</h5>
+</div></pre>
+        
+    </div>
+    <br />
+    <p>
+        Dans le chapitre suivant nous ajouterons une nouvelle page.
+    </p>
+</ol>

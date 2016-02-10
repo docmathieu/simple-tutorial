@@ -1,0 +1,43 @@
+<ti>Ajouter des commentaires</ti>
+<h2>Ajouter des commentaires</h2>
+<p>
+    Simple Tutorial utilise <b>Facebook Comments Plugin</b>, il nous faut donc dans un premier temps récupérer un App ID Facebook.<br />
+    Pour ce faire:
+    <ol>
+        <li>Cliquez sur l'url suivante: <a target="_blank" href="https://developers.facebook.com/apps/">https://developers.facebook.com/apps/</a></li>
+        <li>Cliquez sur le bouton <b>Add a New App</b>.</li>
+        <li>Donnez un nom à votre application, par exemple "mes tutoriels", et cliquez sur <b>Create New Facebook App ID</b>.</li>
+        <li>Sélectionnez une catégorie et cliquez sur <b>Create New Facebook App ID</b>.</li>
+        <li>Dans la partie "Setup the Facebook SDK for JavaScript", repérez l'appId et copier le.</li>
+        <li>Dans la partie "Tell us about your website", renseignez l'url de votre site par exemple http://tuto.monsite.com et cliquez sur le bouton next.</li>
+    </ol>
+</p>
+<br />
+<p>
+    Vous pouvez maintenant modifier le fichier setting.ini
+</p>
+<pre>
+defaultLanguage=fr
+facebookComments=true
+facebookID=[collez votre appId ici]
+</pre>
+<br />
+<div class="warning">
+    <h3><b>ATTENTION !</b></h3>
+    <p>
+        Dans le chapitre "Créer un nouveau tutoriel" nous disions: "Notez que les dossiers 'en' et 'fr' pourraient tout aussi bien s'appeler 'unquoi'".<br />
+        Cette affirmation reste vrai mais la langue 'unquoi' ne sera pas reconnue par facebook comments.
+    </p>
+</div>
+<p>
+    Le fichier <b>simple-tutorial/data/locales.json</b> sert à configurer les codes de langues.<br />
+    Si vous souhaitez vraiment un dossier 'unquoi' avec la langue française, vous pouvez ajouter ceci au fichier locales.json:<br />
+    {"folder":"unquoi", "code":"fr_FR"}<br />
+    Voici la liste des codes langue disponibles: <a target="_blank" href="https://www.facebook.com/translations/FacebookLocales.xml">https://www.facebook.com/translations/FacebookLocales.xml</a>.<br />
+    Le code qui nous interresse se trouve dans la balise representation.
+</p>
+<br />
+<p>
+    Rechargez votre page, vous devriez voir un bloc de commentaire en bas de la page.
+</p>
+<img src="/image/bloc-commentaires.png"/>

@@ -1,0 +1,42 @@
+<ti>Ajout d'images</ti>
+<h2>Ajout d'images</h2>
+<p>
+    Voici une balise img simple, par default l'image prendra sa taille originale ou 100% si la fenêtre est plus petite.
+</p>
+<pre><img src="http://docm.fr/httprequest/phone_1.png"></pre><br />
+<img src="http://docm.fr/httprequest/phone_1.png"/>
+<br />
+<p>
+    Cette balise fait appel à une image distante.<br />
+    Pour utiliser une image locale, utilisez le chemin /image/<br />
+    Téléchargez l'image ci-dessus en cliquant <a href="http://docm.fr/httprequest/phone_1.png" target=_blank">ici</a>, et enregistrez la dans <b>simple-tutorial/data/new-tuto/fr/image/phone_1.png</b>.<br />
+    Dans votre page ajoutez les liens suivants:
+</p>
+<pre>
+<ti>Ma première page</ti>
+<h2>Ma première page</h2>
+<p>
+    Mon premier paragraphe,<br>
+    dans un nouveau tutoriel.
+</p>
+[[b]]<table>
+    <tbody>
+        <tr>
+            <td>Une image distante:</td>
+            <td>Une image locale:</td>
+        </tr>
+        <tr>
+            <td><img src="http://docm.fr/httprequest/phone_6.png" style="width:200px;"></td>
+            <td><img src="/image/phone_1.png" style="width:200px;"></td>
+        </tr>
+    </tbody>
+</table>[[/b]]</pre>
+<p>
+    Le fichier /image/phone_1.png n'existant pas à la racine de votre site, Simple Tutorial va rechercher le chemin réel de l'image.<br />
+    Vous devriez obtenir ceci:
+</p>
+<img src="/image/ajout-image.png"/>
+<br />
+<p>
+    Dans le chapitre suivant nous ajouterons du style spécifique à notre tutoriel.
+</p>

@@ -1,0 +1,109 @@
+<ti>Create a new tutorial</ti>
+<h2>Create a new tutorial</h2>
+<ol>
+    <li class="style-h3">
+        <h3>Root folder</h3>
+    </li>
+    <div>
+        <p>
+            To create an new tutorial, go to <b>simple-tutorial/data</b> folder.
+            Copy and paste "simple-tutorial" folder.<br />
+            rename the new folder to "new-tuto".
+        </p>
+        <p>
+            Inside the root folder:
+            <table>
+                <tr>
+                    <td><b>en</b></td>
+                    <td>contains images and pages for the English language</td>
+                </tr>
+                <tr>
+                    <td><b>fr</b></td>
+                    <td>contains images and pages for the French language</td>
+                </tr>
+                <tr>
+                    <td><b>setting.ini</b></td>
+                    <td>contains tutorial settings, for example the default language</td>
+                </tr>
+                <tr>
+                    <td><b>style.css</b></td>
+                    <td>overrides the global style</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            Note that the 'en' and 'fr' folders might as well be called 'serialkiller', in this case you will see 'serialkiller' in the list of languages.
+        </p>
+    </div>
+    <li class="style-h3">
+        <h3>Default language</h3>
+    </li>
+    <div>
+        <p>
+            Setting the default language.<br />
+            At the same time we will remove facebook comments, we will see these confurations later.<br />
+            Modify setting.ini like this:
+        </p>
+<pre>
+defaultLanguage=en
+facebookComments=false
+facebookID=
+</pre>
+    </div>
+    <br />
+    <li class="style-h3">
+        <h3>Tutorial title</h3>
+    </li>
+    <div>
+        <p>
+            The title is based on the language, so we have a setting.ini file in each language folder.<br />
+            Open this file <b>simple-tutorial/data/new-tuto/en/setting.ini</b> and change the title.
+        </p>
+        <pre>title=New tutorial</pre>
+    </div>
+    <br />
+    <li class="style-h3">
+        <h3>Test the website</h3>
+    </li>
+    <div>
+        <p>
+            In a new tab open http://tuto.mywebsite.com<br />
+            You can see a new link to your tutorial "New tutorial".<br />
+            Click on this link, the current data are those of the tutorial "Simple Tutorial", so we will delete them.<br />
+            First delete fr folder: <b>simple-tutorial/data/new-tuto/fr</b>
+        </p>
+        <p>
+            Delete all files in the following folders:
+            <ul>
+                <li>simple-tutorial/data/new-tuto/en/images</li>
+                <li>simple-tutorial/data/new-tuto/en/pages</li>
+            </ul>
+        </p>
+        <p>
+            There is no data in your tutorial so you will get an error if you reload the page.
+        </p>
+    </div>
+    <li class="style-h3">
+        <h3>Recurrent content</h3>
+    </li>
+    <div>
+        <p>
+            the container.html file is used to add recurrent HTML, which will be visible on all pages of the tutorial.<br />
+            This can be useful to display the name of the author, for example.
+        </p>
+        <p>
+            Open this file <b>simple-tutorial/data/new-tuto/fr/container.html</b> and edit the content by:
+        </p>
+        
+<pre>[DATA]
+<div class='info'>
+    <h5>Author: Full name</h5>
+    <h5>Date: xx-xx-xxxx</h5>
+</div></pre>
+        
+    </div>
+    <br />
+    <p>
+        In the next chapter we will add a new page.
+    </p>
+</ol>

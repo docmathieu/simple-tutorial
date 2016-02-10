@@ -1,0 +1,43 @@
+<ti>Adding images</ti>
+<h2>Adding images</h2>
+<p>
+    Here is a simple img tag, by default the image will take its original size or 100% if the window is smaller.
+</p>
+<pre><img src="http://docm.fr/httprequest/phone_1.png"></pre><br />
+<img src="http://docm.fr/httprequest/phone_1.png"/>
+<br />
+<p>
+    This tag uses a remote image.<br />
+    To use local images put this basepath: <b>/image/</b><br />
+    Download <a href="http://docm.fr/httprequest/phone_1.png" target=_blank">this image</a>, and save it in <b>simple-tutorial/data/new-tuto/fr/image/phone_1.png</b>.<br />
+    In your page add the following links:
+</p>
+<pre>
+<ti>My first page</ti>
+<h2>My first page</h2>
+<p>
+    My first paragraph,<br />
+    in a new tutorial.
+</p>
+[[b]]<table>
+    <tbody>
+        <tr>
+            <td>A remote image:</td>
+            <td>A local image:</td>
+        </tr>
+        <tr>
+            <td><img src="http://docm.fr/httprequest/phone_6.png" style="width:200px;"></td>
+            <td><img src="/image/phone_1.png" style="width:200px;"></td>
+        </tr>
+    </tbody>
+</table>[[/b]]</pre>
+<p>
+    /image/phone_1.png<br />
+    This file does not exist on your website, Simple Tutorial will search the real path of the image.<br />
+    You should get this:
+</p>
+<img src="/image/add-image.png"/>
+<br />
+<p>
+    In the next chapter we will add a specific style to our tutorial.
+</p>
